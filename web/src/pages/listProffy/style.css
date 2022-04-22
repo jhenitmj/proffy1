@@ -1,0 +1,49 @@
+#list-profe {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.buscarProf {
+    background-color: var(--color-primary);
+    margin-top: 0.7rem;
+
+}
+
+.buscarProf label {
+    color: var(--color-text-in-primary);
+}
+
+
+@media (min-width:700px) {
+    #list-profe {
+        max-width: 100vw;
+    }
+
+    #list-profe .header-list {
+        align-items: center;
+        left: 352px;
+
+    
+    }
+
+    .buscarProf {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        position: center;
+        bottom: -44px;
+        position: absolute;
+        width: 737px;
+        height: 88px;
+        left: 352px;
+        top: 105px;
+    }
+
+    .buscarProf .inputb + .inputb
+    .buscarProf .selectb + .selectb {
+        margin-top: 0;
+    }
+
+
+}
