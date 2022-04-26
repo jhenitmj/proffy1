@@ -43,7 +43,7 @@ const ProfessorI: React.FC<ProfProps> = ({ professor }) => {
           Preço/hora
           <strong>R$ {professor.cost}</strong>
         </p>
-        <a 
+        <a className='btw'
           target="_blank" 
           onClick={createNewConnection} 
           href={`https://wa.me/${professor.whatsapp}`}

@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-primary);
-}
-
-.header-list .top-container {
+  }
+  
+  .header-list .top-container {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -12,59 +12,63 @@
     align-items: center;
     color: var(--color-text-in-primary);
     padding: 1.6rem 0;
-}
-
-.header-list .top-container a {
+  }
+  
+  .header-list .top-container a {
     height: 3.2rem;
-}
-
-.logoimg {
+    transition: opacity 0.2s;
+  }
+  
+  .header-list .top-container a:hover {
+    opacity: 0.6;
+  }
+  
+  .header-list .top-container > img {
     height: 1.6rem;
-}
-
-.header-list .h3 {
+  }
+  
+  .header-list .h3 {
     width: 90%;
     margin: 0 auto;
     position: relative;
-    margin: 3.2 auto;
-}
-
-.header-list .h3 h3 {
+    margin: 3.2rem auto;
+  }
+  
+  .header-list .h3 strong {
     font: 700 3.6rem Archivo;
+    line-height: 4.2rem;
     color: var(--color-title-in-primary);
-}
-
-.subTitulo{
+  }
+  
+  .header-list .h3 p {
     max-width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
-    color: var (--color-text-in-primary);
+    color: var(--color-text-in-primary);
     margin-top: 2.4rem;
-}
-@media (min-width:700px) {
-
+  }
+  
+  @media (min-width: 700px) {
     .header-list {
-        height: 200px;
+      height: 340px;
     }
-
+  
     .header-list .top-container {
-        max-width: 1100px;
+      max-width: 1100px;
     }
-
+  
     .header-list .h3 {
-        flex: 1;
-        max-width: 600px;
-        margin: 0 auto;
-        padding-bottom: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        position: absolute;
-        height: 84px;
-        left: 352px;
-        top: 80px;
+      flex: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
     }
-    
-}
+  
+    .header-list .h3 strong {
+      font-size: 50px;
+    }
+  }

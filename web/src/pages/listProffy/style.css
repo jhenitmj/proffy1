@@ -4,14 +4,38 @@
 
 }
 
-.buscarProf {
-    background-color: var(--color-primary);
-    margin-top: 0.7rem;
-
+#buscarProf {
+    margin-top: 3.2rem;
 }
 
-.buscarProf label {
+#buscarProf label {
     color: var(--color-text-in-primary);
+}
+
+#buscarProf button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 3.2rem;
+}
+
+#buscarProf button:hover {
+    background: var(--color-secondary-dark);
+}
+
+#list-profe main {
+    margin: 3.2rem auto;
+    width: 90%;
 }
 
 
@@ -20,30 +44,29 @@
         max-width: 100vw;
     }
 
-    #list-profe .header-list {
-        align-items: center;
-        left: 352px;
-
-    
-    }
-
-    .buscarProf {
+    #buscarProf {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 16px;
-        position: center;
-        bottom: -44px;
         position: absolute;
-        width: 737px;
-        height: 88px;
-        left: 352px;
-        top: 105px;
+        bottom: -28px;
     }
 
-    .buscarProf .inputb + .inputb
-    .buscarProf .selectb + .selectb {
-        margin-top: 0;
+    #list-profe {
+        align-items: center;
     }
+    
+    #list-profe .inputb + .inputb,
+    #list-profe .selectb + .selectb{
+        margin-top: 4px;
+        }
+    
+    
 
+    #list-profe main {
+        padding: 3.2rem 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
 
 }

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import { Link } from 'react-router-dom';
 import backIcon from '../../assets/images/icons/back.svg';
 import logoImg from '../../assets/images/logo.svg';
 import './style.css';
@@ -6,24 +7,26 @@ import './style.css';
 interface HeaderProps {
     title: string;
     sub?:string;
+    children?:ReactNode;
 }
 const HeaderT: React.FC<HeaderProps> = (props) => {
     return (
         <header className="header-list">
             <div className="top-container">
-                <a href="/">
+                <Link to="/">
                     <img src={backIcon} alt="Voltar ao menu inicial" />
-                </a>
+                </Link>
                 <img src={logoImg} alt="Proffy logo" className="logoimg" />
 
             </div>
 
             <div className="h3">
-                <h3>{props.title}</h3>
-                {props.sub ? <p className="subTititulo">{props.sub}</p> : null}
-            </div>
-        
-            
+                <strong>{props.title}</strong>
+                {props.sub ? <p className="subTititulo">{props.sub}</p> : null}    
+
+                {props.children}
+      </div>
+    
         </header>
     )
 }
